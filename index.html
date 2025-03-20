@@ -21,15 +21,10 @@
         </div>
     </header>
     
-    <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-content">
                 <h1>Hola, soy <span>David Mares</span></h1>
                 <p class="subtitle">Diseñador & Desarrollador Frontend</p>
-                <p>Creando experiencias digitales que se destacan por su funcionalidad.</p>
-                <a href="#contacto" class="btn">Contáctame</a>
+                <p class="subtitle2">Creando experiencias digitales que se destacan por su funcionalidad.</p> 
             </div>
-            <div class="hero-image"></div>
         </div>
     </section>
     
@@ -77,80 +72,72 @@
                     <div class="skill-item">
                         <p>HTML & CSS</p>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%;"></div>
+                            <div class="skill-level" style="width: 60%;"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <p>JavaScript</p>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%;"></div>
+                            <div class="skill-level" style="width: 60%;"></div>
                         </div>
                     </div>
                     <div class="skill-item">
                         <p>React</p>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 50%;"></div>
+                            <div class="skill-level" style="width: 40%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="proyectos" class="portfolio">
         <div class="container">
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <div class="portfolio-image" style="background-image: url('pics/pagina\ noticias.png');"></div>
+                    <div class="portfolio-image" style="background-image: url('pics/pagina noticias.png');"></div>
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto Uno</h3>
-                        <p class="portfolio-category">Página de noticias hecha con IA</p>
+                        <h3 class="portfolio-title">Global News Network</h3>
+                        <p class="portfolio-category">Proyecto de página de noticias. Práctica hecha con IA.</p>
+                        <a href="paginas/Noticia/index.html" class="portfolio-category" target="_blank">Click aquí para visualizar.</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image" style="background-image: url('pics/restaurante.png');"></div>
                     <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto Dos</h3>
-                        <p class="portfolio-category">Página de restaurante</p>
+                        <h3 class="portfolio-title">El Estudiante</h3>
+                        <p class="portfolio-category">Página de realizada para restaurante "El Estudante."</p>
+                        <a href="paginas/elestudiante/index.html" class="portfolio-category" target="_blank">Click aquí para visualizar."</a>
                     </div>
                 </div>
-                <h3>Colocar puntero encima</h3>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
+                <div class="portfolio-item" onclick="openModal()">
+                    <div class="portfolio-image" style="background-image: url('pics/UI-UX.png');"></div>
                     <div class="portfolio-overlay">
-                        <video width="100%" height="100%" controls>
-                            <source src="pics/UI-UX.mp4" type="video/mp4">
-                        </video>
-                        <h3 class="portfolio-title">Proyecto Tres</h3>
-                        <p class="portfolio-category">UX/UI Design</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto Cuatro</h3>
-                        <p class="portfolio-category">UX/UI Design</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto Cinco</h3>
-                        <p class="portfolio-category">Desarrollo Frontend</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Proyecto Seis</h3>
-                        <p class="portfolio-category">Diseño Web</p>
+                        <h3 class="portfolio-title">Core Tech</h3>
+                        <p class="portfolio-category">Práctica de UI Design.</p>
+                        <p class="portfolio-category">Click aquí para visualizar</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <video id="videoPlayer" autoplay muted controls>
+                <source src="pics/UI-UX.mp4" type="video/mp4">
+                Tu navegador no soporta videos en HTML5.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
     <section id="contacto" class="contact">
         <div class="container">
             <h2 class="section-title">Contacto</h2>
@@ -194,10 +181,9 @@
     <footer>
         <div class="container">
             <ul class="social-links">
-                <li><a href="#" class="social-icon">in</a></li>
-                <li><a href="#" class="social-icon">ig</a></li>
-                <li><a href="#" class="social-icon">tw</a></li>
-            </ul>
+                <li><a href="https://www.linkedin.com/in/david-mares-valverde" class="social-icon" target="_blank">ln</a></li>
+                <li><a href="https://github.com/DavidMesVal" class="social-icon" target="_blank">Git</a></li>
+            </ul>            
             <p>&copy; 2025 David Mares. Todos los derechos reservados.</p>
         </div>
     </footer>
