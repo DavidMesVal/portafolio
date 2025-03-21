@@ -240,6 +240,7 @@ h1 span {
     color: var(--ivory);
     font-size: 0.9rem;
     font-weight: 300;
+    text-shadow: #000;
 }
 
 .contact {
